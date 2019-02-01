@@ -18,6 +18,7 @@ end
 group :development do
   # Use sqlite3 as the development database for Active Record
   gem 'sqlite3'
+  gem 'listen', '~> 3.0.5'
 end
 
 
@@ -42,6 +43,4 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'thor', '0.20.3'
 
-group :development do
-  gem 'listen', '~> 3.0.5'
-end
+gem 'bootstrap-sass'

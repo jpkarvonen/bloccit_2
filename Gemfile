@@ -45,3 +45,5 @@ gem 'jbuilder', '~> 2.5'
 gem 'thor', '0.20.3'
 
 gem 'bootstrap-sass'
+
+gem 'bcrypt'

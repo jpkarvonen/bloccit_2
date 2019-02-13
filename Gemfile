@@ -47,3 +47,5 @@ gem 'thor', '0.20.3'
 gem 'bootstrap-sass'
 
 gem 'bcrypt'
+
+gem 'figaro', '1.0'

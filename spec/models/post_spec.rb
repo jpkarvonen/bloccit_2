@@ -13,6 +13,7 @@ RSpec.describe Post, type: :model do
   it { is_expected.to belong_to(:topic) }
   it { is_expected.to belong_to(:user) }
   it { is_expected.to have_many(:votes) }
+  it { is_expected.to have_many(:favorites) }
 
   it { is_expected.to validate_presence_of(:title) }
   it { is_expected.to validate_presence_of(:body) }
@@ -75,7 +76,7 @@ RSpec.describe Post, type: :model do
 
     describe "#create_vote" do
       it "adds 1 to up_vote to new post" do
-        new_post = topic.posts.create!(title: title, body: body, user: user) 
+        new_post = topic.posts.create!(title: title, body: body, user: user)
         expect(new_post.up_votes).to eq(1)
       end
     end
